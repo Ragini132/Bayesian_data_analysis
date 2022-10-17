@@ -1,0 +1,73 @@
+% Bayesian Data Analysis
+% Fall 2020
+% HW1p: Programming Homework #1
+% Instructor:    Prof. Kevin H. Knuth
+% Date : 3 Sep 2020
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% a) Write a SCRIPT to verify that computers do indeed make mistakes
+%    - Create a loop that adds 0.1 to a variable 10 times done
+%    - Display the result done
+%    - Does this give you the correct answer of 0.1 * 10 = 1? Yes
+%    - ARE YOU SURE ITS CORRECT?  Try subtracting 1.0 to see the difference yes
+%    - How large is the error in the calculation? No error
+%
+% b) Write a SCRIPT where you vectorize the above code:
+%    - Create a 1x10 vector of values equal to 0.1 done
+%    - Use the sum function to sum them done
+%    - What is the error in this case? No error
+%    - Use the functions 'tic' and 'toc' to determine whether
+%      the vectorized code is faster or slower than the above code.  Faster
+%      Note that you may have to loop through the calculation many 
+%      times to get a good estimate.  Make sure you get a good estimate!
+%
+% c) Write a FUNCTION called myCOSINE to be used as such:  y = myCOSINE(x)
+%    to compute the values of cos(x) correct to three decimal places.
+%    Use the Taylor series below to do this.  How many terms will you need
+%    to make sure that the result is accurate to three decimal places?
+%       cos(x) = 1 - x^2/2! + x^4/4! - x^6/6! + ...
+%    Be warned that this Taylor series is an approximation for x close to zero.
+%    You may need to take advantage of some of the symmetries of the cosine 
+%    to extend your function all the way out to 2pi.
+%    - Prepend the function header below to your function and fill in the
+%      details as instructed.  USE THIS FOR ALL FUNCTIONS!
+%
+% d) Write a SCRIPT that compares myCOSINE() to cos()
+%    - On a SINGLE plot display the cosine from 0 to 2pi using each function
+%      Color MATLAB's cos() function using RED
+%      Color your myCOSINE() function using BLUE
+%    - Create a second plot showing the difference between the two functions
+%
+% e) Write a SCRIPT that estimates the probability that one will roll:
+%    - At least one six when rolling 6 six-sided dice.
+%	 - At least two sixes when rolling 12 six-sided dice.
+%	 - At least three sixes when rolling 18 six-sided dice.
+%    Comment on the results and whether they make sense to you.
+%
+% Your results, summary, plots and comments should be pressented in a short (~2 page) 
+% written report (pdf please).  A zip file containing your code and your pdf report
+% should be submitted to knuthclass@gmail.com
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%% FUNCTION HEADER EXAMPLE  %%%%
+%%%% PREPEND THIS TO EVERY FUNCTION %%%%
+
+% ENTER FUNCTION NAME HERE
+% ENTER TEXT DESCRIBING WHAT THE FUNCTION DOES
+%
+% Usage:
+%           function [ output_args ] = Untitled2( input_args )
+%           
+% Where:
+%           input_args  = LIST AND DESCRIBE THEM
+%           output_args = LIST AND DESCRIBE THEM
+%
+% ENTER ANY ADDITIONAL NOTES
+% 
+% Created By: 
+%           ENTER YOUR NAME
+%           ENTER THE DATE
+%
+% ENTER MODIFICATION INFORMATION HERE
