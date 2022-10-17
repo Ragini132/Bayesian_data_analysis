@@ -1,0 +1,17 @@
+Bayesian Data Analysis (PHY/CSI/INF 451/551) HW#3p
+1. Generate a vector of 1000 uniformly-distributed samples (numbers between zero and one), and plot them in a histogram to verify that they are uniformly distributed.
+2. Obtain 100 uniformly-distributed samples between 0.3 and 0.5 and plot their distribution in a histogram.
+3. Use the MATLAB function randn to generate 1000 normally distributed samples with zero mean and a standard deviation of one. Plot their distribution in a histogram.
+4. The normal distribution, also known as a Gaussian distribution, is a bell-shaped curve. Mathematically, the distribution is
+𝑃(𝑥 | 𝜇, 𝜎, 𝐼) = 1 𝑒𝑥𝑝 (− (𝑥− 𝜇)2). √2𝜋𝜎2 2𝜎2
+Plot the Gaussian curve (for 𝜇 = 0 and 𝜎 = 1) over the histogram above (#3), showing both results in the same figure, and show that the histogram indeed follows the Gaussian distribution.
+5. Write code to run the following simulation. Define, and plot, a rectangle going from 𝑥 = 0 to
+𝑥 = 4 on the x-axis and from 𝑦 = 0 to 𝑦 = 4 on the y-axis. Define, and plot, a function that has the following behavior
+1 𝑓𝑜𝑟 0≤𝑥<1 𝑝(𝑥)={2 𝑓𝑜𝑟 1≤𝑥<2 3 𝑓𝑜𝑟 2≤𝑥<3 4 𝑓𝑜𝑟 3≤𝑥<4
+Next sample 1000 points uniformly distributed within this rectangle. You can do this by uniformly sampling the x coordinates of the points in the range 0 ≤ 𝑥 < 4, and the same for the y-coordinates.
+Plot these 1000 points on the same figure, coloring the points above the staircase function 𝑝(𝑥) red, and the ones below 𝑝(𝑥) blue.
+Last, take the blue samples, the ones below the function 𝑝(𝑥), and on a separate figure make a histogram of their x values. Show that this histogram is the staircase function 𝑝(𝑥).
+Note that you have ignored (rejected) the red samples that lie above the function 𝑝(𝑥).
+This technique allows you to draw samples with any distribution 𝑝(𝑥)!
+EXTRA CREDIT
+Go through #5 again and try another (your choice) function for 𝑝(𝑥), and include the two figures (rectangle with 𝑝(𝑥) and samples AND the histogram of those samples) in your homework for extra credit.
